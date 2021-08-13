@@ -1,0 +1,22 @@
+{
+  "name": "JHKit",
+  "version": "0.1.0",
+  "summary": "A short description of JHKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/274180213@qq.com/JHKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "274180213@qq.com": "274180213@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/274180213@qq.com/JHKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "JHKit/Classes/**/*"
+}
