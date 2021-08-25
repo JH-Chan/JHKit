@@ -111,6 +111,52 @@ static NSString * const UITextFieldNotificationKey = @"UITextFieldTextDidChangeN
         textField.text = [NSString jh_disableEmoji:toBeString];
     }
 }
+#pragma mark - methods
+///限制输入内容为整型和小数 备注：jh_inputMaxNumber 不能同时使用
+/// @param decimailNum 保留几位小数
+/// @param integerNum 整型部分位数
+-(BOOL)jh_checkInputTextKeepDecimailNum:(NSInteger)decimailNum
+                             integerNum:(NSInteger)integerNum
+{
+    if ([string isEqualToString:@""]) {
+        return YES;
+    }
+    NSString *temp = @"0123456789.";
+    if (![temp containsString:string]) {
+        return NO;
+    }
+    if (text.length == 0 && [string isEqualToString:@"."]) {
+        return NO;
+    }
+    if ([text containsString:@"."]) {
+        if ([string isEqualToString:@"."]) {
+            return NO;
+        }
+        NSArray *arr = [text componentsSeparatedByString:@"."];
+        if (arr.count != 0) {
+            NSRange decimailRange = [text rangeOfString:@"."];
+            // 输入在整数部分的
+            if (range.location <= decimailRange.location) {
+                if ([arr[0] length] >= integerNum) {
+                    return NO;
+                }
+            }else {
+                // 输入在小数部分的
+                if (arr.count > 1 && [arr[1] length] >= decimalNum) {
+                    return NO;
+                }
+            }
+        }
+    }else {
+        if ([string isEqualToString:@"."]) {
+            return YES;
+        }
+        if (text.length >= integerNum) {
+            return NO;
+        }
+    }
+    return YES;
+}
 #pragma mark - 销毁
 -(void)dealloc
 {

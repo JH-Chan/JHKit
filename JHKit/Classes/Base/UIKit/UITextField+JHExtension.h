@@ -16,9 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIFont *  jh_placeholderFont;
 /// 占位符字体颜色
 @property (nonatomic, strong) UIColor * jh_placeholderColor;
-/// 禁止输入emoji表情
+/// 禁止输入系统emoji表情
 @property (nonatomic, assign) BOOL jh_isBanInputEmoJi;
-
+///限制输入内容为整型和小数 备注：jh_inputMaxNumber 不能同时使用
+/// @param decimailNum 保留几位小数
+/// @param integerNum 整型部分位数
+-(BOOL)jh_checkInputTextKeepDecimailNum:(NSInteger)decimailNum integerNum:(NSInteger)integerNum;
 @end
 
 NS_ASSUME_NONNULL_END
