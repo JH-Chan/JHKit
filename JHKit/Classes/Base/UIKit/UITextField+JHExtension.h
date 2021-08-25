@@ -24,8 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)jh_textField:(UITextField *)textField
 shouldChangeCharactersInRange:(NSRange)range
 replacementString:(NSString *)string
-     keepDecimailNum:(NSInteger)decimailNum
-          integerNum:(NSInteger)integerNum;
+keepDecimalPlacesNumber:(NSInteger)decimalNum
+       integerNumber:(NSInteger)integerNum;
 @end
 
 NS_ASSUME_NONNULL_END

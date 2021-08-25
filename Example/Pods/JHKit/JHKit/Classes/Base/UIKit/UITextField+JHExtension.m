@@ -129,16 +129,16 @@ replacementString:(NSString *)string
     if (![temp containsString:string]) {
         return NO;
     }
-    if (text.length == 0 && [string isEqualToString:@"."]) {
+    if (textField.text.length == 0 && [string isEqualToString:@"."]) {
         return NO;
     }
-    if ([text containsString:@"."]) {
+    if ([textField.text containsString:@"."]) {
         if ([string isEqualToString:@"."]) {
             return NO;
         }
-        NSArray *arr = [text componentsSeparatedByString:@"."];
+        NSArray *arr = [textField.text componentsSeparatedByString:@"."];
         if (arr.count != 0) {
-            NSRange decimailRange = [text rangeOfString:@"."];
+            NSRange decimailRange = [textField.text rangeOfString:@"."];
             // 输入在整数部分的
             if (range.location <= decimailRange.location) {
                 if ([arr[0] length] >= integerNum) {
@@ -155,7 +155,7 @@ replacementString:(NSString *)string
         if ([string isEqualToString:@"."]) {
             return YES;
         }
-        if (text.length >= integerNum) {
+        if (textField.text.length >= integerNum) {
             return NO;
         }
     }

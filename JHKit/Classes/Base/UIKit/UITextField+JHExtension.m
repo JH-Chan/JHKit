@@ -118,8 +118,8 @@ static NSString * const UITextFieldNotificationKey = @"UITextFieldTextDidChangeN
 - (BOOL)jh_textField:(UITextField *)textField
 shouldChangeCharactersInRange:(NSRange)range
 replacementString:(NSString *)string
-     keepDecimailNum:(NSInteger)decimailNum
-          integerNum:(NSInteger)integerNum
+keepDecimalPlacesNumber:(NSInteger)decimalNum
+          integerNumber:(NSInteger)integerNum
 
 {
     if ([string isEqualToString:@""]) {
@@ -138,9 +138,9 @@ replacementString:(NSString *)string
         }
         NSArray *arr = [textField.text componentsSeparatedByString:@"."];
         if (arr.count != 0) {
-            NSRange decimailRange = [textField.text rangeOfString:@"."];
+            NSRange decimalRange = [textField.text rangeOfString:@"."];
             // 输入在整数部分的
-            if (range.location <= decimailRange.location) {
+            if (range.location <= decimalRange.location) {
                 if ([arr[0] length] >= integerNum) {
                     return NO;
                 }
