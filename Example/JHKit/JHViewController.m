@@ -7,6 +7,7 @@
 //
 
 #import "JHViewController.h"
+#import <JHKit/JHKit.h>
 @interface JHViewController ()
 
 @end
@@ -16,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    UITextField * textField = [[UITextField alloc]init];
+    [textField jh_checkInputTextKeepDecimailNum:10 integerNum:2];
 }
 
 - (void)didReceiveMemoryWarning

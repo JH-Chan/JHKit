@@ -3,8 +3,7 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'JHKit_Example' do
-#  pod 'JHKit', :path => 'https://github.com/JH-Chan/JHKit.git'
-
+        pod 'JHKit',:git => 'https://github.com/JH-Chan/JHKit.git'
   target 'JHKit_Tests' do
     inherit! :search_paths
 

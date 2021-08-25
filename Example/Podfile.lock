@@ -4,11 +4,11 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - JHKit (0.1.0)
+  - JHKit (0.0.2)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
-  - JHKit (from `../`)
+  - JHKit (from `https://github.com/JH-Chan/JHKit.git`)
 
 SPEC REPOS:
   trunk:
@@ -16,12 +16,17 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   JHKit:
-    :path: "../"
+    :git: https://github.com/JH-Chan/JHKit.git
+
+CHECKOUT OPTIONS:
+  JHKit:
+    :commit: 6c1dce6b62bf8a30977c38d5841ff707432650e1
+    :git: https://github.com/JH-Chan/JHKit.git
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  JHKit: 197b69cb6704d0615396a20ad19ecee09657ccc2
+  JHKit: 984563890c5b822673f2459ff75cafdc1b301d67
 
-PODFILE CHECKSUM: 1170087f91e6ec79c865f02c9c008a49a803ca84
+PODFILE CHECKSUM: b801e5be5069b63473404737b107a89fbe4424d7
 
 COCOAPODS: 1.11.0.beta.2
