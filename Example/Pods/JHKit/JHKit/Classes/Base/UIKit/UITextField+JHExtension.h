@@ -21,7 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
 ///限制输入内容为整型和小数 备注：jh_inputMaxNumber 不能同时使用
 /// @param decimailNum 保留几位小数
 /// @param integerNum 整型部分位数
--(BOOL)jh_checkInputTextKeepDecimailNum:(NSInteger)decimailNum integerNum:(NSInteger)integerNum;
+- (BOOL)jh_textField:(UITextField *)textField
+shouldChangeCharactersInRange:(NSRange)range
+replacementString:(NSString *)string
+     keepDecimailNum:(NSInteger)decimailNum
+          integerNum:(NSInteger)integerNum;
 @end
 
 NS_ASSUME_NONNULL_END

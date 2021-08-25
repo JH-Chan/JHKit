@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   JHKit:
-    :commit: 6c1dce6b62bf8a30977c38d5841ff707432650e1
+    :commit: bb0712c49d990db006c758727c23a3ed6012b2fd
     :git: https://github.com/JH-Chan/JHKit.git
 
 SPEC CHECKSUMS:
