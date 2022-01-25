@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (JHExtension)
-
+@property (nonatomic, assign) CGFloat jh_clickDelay;
 @end
 
 NS_ASSUME_NONNULL_END

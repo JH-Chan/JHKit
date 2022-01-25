@@ -112,9 +112,12 @@ static NSString * const UITextFieldNotificationKey = @"UITextFieldTextDidChangeN
     }
 }
 #pragma mark - methods
-///限制输入内容为整型和小数 备注：jh_inputMaxNumber 不能同时使用
-/// @param decimailNum 保留几位小数
-/// @param integerNum 整型部分位数
+/// 限制输入内容为整型和小数 备注：jh_inputMaxNumber 不能同时使用
+/// @param textField 控件
+/// @param range 范围
+/// @param string 替换字符串
+/// @param decimalNum 小数位数
+/// @param integerNum 整数位数
 - (BOOL)jh_textField:(UITextField *)textField
 shouldChangeCharactersInRange:(NSRange)range
 replacementString:(NSString *)string

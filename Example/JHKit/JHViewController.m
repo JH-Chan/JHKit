@@ -7,8 +7,7 @@
 //
 
 #import "JHViewController.h"
-#import <JHKit/JHKit.h>
-@interface JHViewController ()<UITextFieldDelegate>
+@interface JHViewController ()
 
 @end
 
@@ -17,21 +16,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UITextField * textField = [[UITextField alloc]init];
-    textField.delegate = self;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
--(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
-{
-    return [textField jh_textField:textField
-     shouldChangeCharactersInRange:range
-                 replacementString:string
-                   keepDecimailNum:2
-                        integerNum:10];
+    NSInteger count = 10 % 3;
+    NSLog(@"count = %ld",count);
 }
 @end

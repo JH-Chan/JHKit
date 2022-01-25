@@ -41,6 +41,22 @@
 		3072D561D938BA0812259C9C /* Pods-JHKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-JHKit_Tests/Pods-JHKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		409AA0BEF88594368B0C463C /* Pods_JHKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE63AAE7DD80E06572689DE /* Pods-JHKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHKit_Example.release.xcconfig"; path = "Target Support Files/Pods-JHKit_Example/Pods-JHKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		56F98AF326D738CA004CDEE1 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		56F98AF426D738CA004CDEE1 /* JHKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHKit.h; sourceTree = "<group>"; };
+		56F98AF726D738CA004CDEE1 /* JHAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAlertController.h; sourceTree = "<group>"; };
+		56F98AF826D738CA004CDEE1 /* UIAlertController+JHExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+JHExtension.h"; sourceTree = "<group>"; };
+		56F98AF926D738CA004CDEE1 /* UIViewController+JHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JHExtension.m"; sourceTree = "<group>"; };
+		56F98AFA26D738CA004CDEE1 /* UITextField+JHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JHExtension.m"; sourceTree = "<group>"; };
+		56F98AFB26D738CA004CDEE1 /* UIButton+JHExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JHExtension.h"; sourceTree = "<group>"; };
+		56F98AFC26D738CA004CDEE1 /* JHAlertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAlertController.m; sourceTree = "<group>"; };
+		56F98AFD26D738CA004CDEE1 /* UIViewController+JHExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JHExtension.h"; sourceTree = "<group>"; };
+		56F98AFE26D738CA004CDEE1 /* UIAlertController+JHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+JHExtension.m"; sourceTree = "<group>"; };
+		56F98AFF26D738CA004CDEE1 /* UITextField+JHExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+JHExtension.h"; sourceTree = "<group>"; };
+		56F98B0026D738CA004CDEE1 /* UIButton+JHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JHExtension.m"; sourceTree = "<group>"; };
+		56F98B0226D738CA004CDEE1 /* NSString+JHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JHExtension.m"; sourceTree = "<group>"; };
+		56F98B0326D738CA004CDEE1 /* NSObject+JHExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JHExtension.m"; sourceTree = "<group>"; };
+		56F98B0426D738CA004CDEE1 /* NSString+JHExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JHExtension.h"; sourceTree = "<group>"; };
+		56F98B0526D738CA004CDEE1 /* NSObject+JHExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JHExtension.h"; sourceTree = "<group>"; };
 		5C90C7EA27F457BD87E3A291 /* Pods_JHKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* JHKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +111,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56F98AF226D738CA004CDEE1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				56F98AF326D738CA004CDEE1 /* .gitkeep */,
+				56F98AF426D738CA004CDEE1 /* JHKit.h */,
+				56F98AF526D738CA004CDEE1 /* Base */,
+			);
+			name = Classes;
+			path = ../../JHKit/Classes;
+			sourceTree = "<group>";
+		};
+		56F98AF526D738CA004CDEE1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				56F98AF626D738CA004CDEE1 /* UIKit */,
+				56F98B0126D738CA004CDEE1 /* Foundation */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		56F98AF626D738CA004CDEE1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				56F98AF726D738CA004CDEE1 /* JHAlertController.h */,
+				56F98AFC26D738CA004CDEE1 /* JHAlertController.m */,
+				56F98AF826D738CA004CDEE1 /* UIAlertController+JHExtension.h */,
+				56F98AFE26D738CA004CDEE1 /* UIAlertController+JHExtension.m */,
+				56F98AFB26D738CA004CDEE1 /* UIButton+JHExtension.h */,
+				56F98B0026D738CA004CDEE1 /* UIButton+JHExtension.m */,
+				56F98AFF26D738CA004CDEE1 /* UITextField+JHExtension.h */,
+				56F98AFA26D738CA004CDEE1 /* UITextField+JHExtension.m */,
+				56F98AFD26D738CA004CDEE1 /* UIViewController+JHExtension.h */,
+				56F98AF926D738CA004CDEE1 /* UIViewController+JHExtension.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		56F98B0126D738CA004CDEE1 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				56F98B0526D738CA004CDEE1 /* NSObject+JHExtension.h */,
+				56F98B0426D738CA004CDEE1 /* NSString+JHExtension.h */,
+				56F98B0326D738CA004CDEE1 /* NSObject+JHExtension.m */,
+				56F98B0226D738CA004CDEE1 /* NSString+JHExtension.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +196,7 @@
 		6003F593195388D20070C39A /* Example for JHKit */ = {
 			isa = PBXGroup;
 			children = (
+				56F98AF226D738CA004CDEE1 /* Classes */,
 				6003F59C195388D20070C39A /* JHAppDelegate.h */,
 				6003F59D195388D20070C39A /* JHAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -207,7 +272,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				77DB4384D4D1A4382C49574E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,24 +380,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		77DB4384D4D1A4382C49574E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JHKit_Example/Pods-JHKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JHKit/JHKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JHKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JHKit_Example/Pods-JHKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7CD5E9A31D317D7F2AF56F7B /* [CP] Check Pods Manifest.lock */ = {
